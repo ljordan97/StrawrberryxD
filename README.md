@@ -1,10 +1,10 @@
-The Strawrberry xD robot is a serial manipulator consisting of 4 revolute joints. The end effector
+**The Strawrberry xD robot** is a serial manipulator consisting of 4 revolute joints. The end effector
 has a camera to sense strawberries using computer vision.
 
 Sensing and actuation is processed and controlled by a BeagleBone Black dev board, with telemetry to offload any graphics 
 processing to a remote device. 
 
-General workflow:
+######State Machine:
  * Get camera data
  * Run the OpenCV strawberry recognition algorithm  (target acquisition)
  * Selecting the leftmost target, the manipulator will orient itself to 
